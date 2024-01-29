@@ -1,0 +1,16 @@
+.CoverImageText{
+    position: absolute;
+    top: 350px;
+    left: 250px;
+}
+.CoverImageText-text1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+.CoverImageText-text2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: #e98107;
+}
