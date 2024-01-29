@@ -29,6 +29,8 @@ function Course(){
         <img alt="HeroImg" src={Course_image1} className="course-cover-image cenetered"/>
 
         <CoverImageText/>
+
+        <div>Hey Git has been updated!!!!!....</div>
         
         </>
     )
