@@ -1,11 +1,9 @@
 import Navbar from "../../components/Navbar";
-
-
 import { useState } from 'react'
 import Header from "./Header";
 import Home from "./Home";
 import Sidebar from "./Sidebar";
-import "./UserDashboard.css"
+import "../CSS/UserDashboard.css"
 
 function UserDashboard() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
@@ -15,14 +13,14 @@ function UserDashboard() {
   }
 
   return (
-    <>
+    <div>
     <Navbar/>
     <div className='grid-container'>
       <Header OpenSidebar={OpenSidebar}/>
       <Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar}/>
       <Home />
     </div>
-    </>
+    </div>
   )
 }
 

@@ -1,0 +1,11 @@
+.enroll-button{
+    background-color: green;
+    color: white;
+}
+.course-card-footer-content{
+    width: auto;
+    background-color: aqua;
+}
+.course-card-content{
+    cursor: pointer;
+}

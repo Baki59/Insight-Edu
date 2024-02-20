@@ -1,4 +1,6 @@
-.container{
+.signup-container{
+    position: relative;
+    top: 80px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -8,7 +10,7 @@
     padding-bottom: 30px;
 }
 
-.header{
+.signup-header{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,67 +19,73 @@
     margin-top: 30px;
 }
 
-.text{
+.signup-text{
     color: #3c009d;
     font-size: 48px;
     font-weight: 700;
 }
 
-.underline{
+.signup-underline{
     width: 61px;
     height: 6px;
     background: #3c009d;
     border-radius: 9px;
 }
 
-.inputs{
+.signup-inputs{
     margin-top: 55px;
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
-.input{
+.signup-input{
     display: flex;
     align-items: center;
     margin: auto;
-    width: 480px;
+    width: 420px;
     height: 80px;
     background: #eaeaea;
-    border-radius: 6px;
+    border-radius: 20px;
 }
 
 
 
-.input input{
+.signup-input input{
     height: 50px;
     width: 400px;
     background: transparent;
     border: none;
+    border-radius: 10px;
     outline: none;
     color: #797979;
     font-size: 19px;
+    padding: 10px;
 }
 
-.forgot-password{
+.signup-img{
+    margin-left: auto;
+}
+
+.signup-forgot-password{
     padding-left: 62px;
     margin-top: 27px;
     color: #797979;
     font-size: 18px;
 }
 
-.forgot-password span{
+.signup-forgot-password span{
     color: #4c00b4;
     cursor: pointer;
 }
 
-.submit-container{
+.signup-submit-container{
     display: flex;
     gap: 30px;
     margin: 60px auto;
 }
 
-.submit{
+.signup-submit{
     display: flex;
     justify-content: center;
     align-items: center;

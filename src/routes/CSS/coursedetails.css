@@ -1,0 +1,98 @@
+.centered{
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    //display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+/* .course-fullpage{
+    display: flex;
+    flex-direction: column;
+} */
+.course-container{
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+    height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 0.15fr);
+    grid-template-areas: 'firstRowElement1 input firstRowElement3 firstRowElement4';
+    grid-gap: 10px;
+    padding-top: 50px;
+    //padding-bottom: 100px;
+    //border-radius: 50px;
+
+
+}
+.first-row-element-1{
+    grid-area: firstRowElement1;
+    //position: relative;
+    //flex-direction: column;
+    background-color: #ca701d;
+    //width: 35%;
+    height: 40px;
+    color: white;
+    /* text-align: center;
+    vertical-align: middle; */
+    //left: 10px;
+    //top: 10px;
+    border-radius: 10px;
+
+}
+.first-row-element-2{
+    grid-area: input;
+    //position: relative;
+    //width: 35%;
+    height: 40px;
+    //left: 250px;
+    //bottom: 30px;
+    background-color:#f2f2f2;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 50px;
+    text-align: center;
+}
+.first-row-element-3{
+    grid-area: firstRowElement3;
+    //position: relative;
+    //width: 25%;
+    //width: 25%;
+    height: 40px;
+    //left: 480px;
+    //bottom: 70px;
+    background-color: #c5425d;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+.first-row-element-4{
+    grid-area: firstRowElement4;
+    //position: relative;
+    //width: 25%;
+    //width: 25%;
+    height: 40px;
+    //left: 650px;
+    background-color: #e6dcdc;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1060px){
+    .course-container{
+        padding: 100px;
+        position: relative;
+        left: 20px;
+        right: 20px;
+        width: 100%;
+        height: 30vh;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-template-areas: 'firstRowElement1'
+                            'input' 'firstRowElement3' 'firstRowElement4';
+        grid-gap: 20px;
+    
+    }
+}

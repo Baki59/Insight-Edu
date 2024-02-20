@@ -9,8 +9,13 @@ export const Box = styled.div`
 	bottom: 0;
 	width: 100%;
 
-	@media (max-width: 1000px) {
+	@media (max-width: 1460px) {
 		// padding: 70px 30px;
+		width: 100%;
+	}
+	@media (max-width: 960px) {
+		// padding: 70px 30px;
+		width: 100%;
 	}
 `;
 
@@ -23,6 +28,11 @@ export const Logo = styled.div`
     width: 20%;
     border-bottom-right-radius: 80px 80px;
     background: #d8d8d8;
+
+	@media (max-width: 1460px) {
+		width: 30%;
+		// padding: 70px 30px;
+	}
 
 
 `;

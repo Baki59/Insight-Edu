@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 //import SignUp from "../routes/SignUp";
 import logo from "../assets/logo.png"
 import LanguageSelector from './LanguageSelector';
+// import MenuIcon from '@material-ui/icons/Menu';
 
 const Navbar = () => {
     const [state, setState] = useState(false);
@@ -32,7 +33,7 @@ const Navbar = () => {
             <h1 className="navbar-logo"><img src={logo} alt="Logo" /></h1>
 
             <div className="menu-icons" onClick={handleClick}>
-                <i className= "fas fa-bars">=</i>
+            <i class="bi bi-list">=</i>
             </div>
             <ul className={state ? "nav-menu active" : "nav-menu"}>
                 {MenuItems.map((item,index) => {

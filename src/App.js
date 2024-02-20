@@ -8,7 +8,7 @@ import './App.css';
 //import banner from "./assets/Banner.jpg"
 //import Hero from './components/Hero';
 import { Route, Routes } from 'react-router-dom';
-import Home from './routes/Home';
+import Home from './routes/Home/Home';
 import Blog from './routes/Blog';
 import Contact from './routes/Contact';
 import Course from './routes/Course/Course';
@@ -17,6 +17,8 @@ import Scholarship from './routes/Scholarship';
 import UserDashboard from './routes/UserDashboard/UserDashboard';
 import SignUp from './routes/SIgnup';
 import Login from './routes/Login';
+import Enroll from './routes/Enroll';
+import CourseDetails from './routes/Course/CourseDetails';
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/signup/login' element={<Login/>}/>
         <Route path='/signup/login/userdashboard' element={<UserDashboard/>}/>
+        <Route path='/course/enroll' element={<Enroll/>}/>
+        <Route path='/course/coursedetails' element={<CourseDetails/>}/>
       </Routes>     
     </div>
   );
