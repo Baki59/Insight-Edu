@@ -6,7 +6,7 @@ const CourseLeftBar = () => {
   return (
     <Grid>
                 <Grid item xs sm md>
-                <FormControl sx={{ m: 3 }}>
+                <FormControl sx={{ m: 3 }} className='course-left-bar-form-control1'>
                     <FormLabel className="course-left-box1-header">Course Pricing</FormLabel>
                     <FormGroup>
                     <FormControlLabel
@@ -32,7 +32,7 @@ const CourseLeftBar = () => {
                 </FormControl>
                 </Grid>
                 <Grid item xs sm md>
-                <FormControl sx={{ m: 3 }}>
+                <FormControl sx={{ m: 3 }} className='course-left-bar-form-control2'>
                     <FormLabel className="course-left-box1-header">Course Catergory</FormLabel>
                     <FormGroup>
                     <FormControlLabel

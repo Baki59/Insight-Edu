@@ -1,11 +1,100 @@
+/* .course-card-box{
+    border-radius: 20px;
+
+} */
+.course-card-box Card{
+    background-color: #ECE1E1;
+}
 .enroll-button{
-    background-color: green;
+    background-color: #58C233;
     color: white;
+    width: 89px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
 }
 .course-card-footer-content{
-    width: auto;
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 33px;
+    background-color: #D9D9D9;
+    align-content: center;
+    vertical-align: middle;
 }
+.course-card-footer-content div1{
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    font-weight: bold;
+    align-self: center;
+    color: #58C233;
+}
+.course-card-footer-content div4{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+.course-card-footer-content div2{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    font-weight: bold;
+    align-self: center;
+    text-decoration: line-through;
+}
+.course-card-footer-content div3{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    font-weight: bold;
+    align-self: center;
+    margin-left: 5px;
+}
+
 .course-card-content{
     cursor: pointer;
+    background-color: #ECE1E1;
+}
+.course-card-content Typography{
+    color: #1556FC;
+    width: 104px;
+    height: 60px;
+}
+
+.course-card-review{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}
+
+.course-card-review div1{
+    display: flex;
+    flex-direction: row;
+}
+.course-card-review div11{
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: 16px;
+}
+.course-card-review div12{
+    display: flex;
+    flex-direction: column;
+    width: 4px;
+    height: 15px;
+    color: #EA8208;
+}
+.course-card-review div13{
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: 16px;
+}
+.course-card-review div2{
+    display: flex;
+    flex-direction: row;
 }

@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import i18n from '../i18n';
+import "./languageselector.css"
 
 const LanguageSelector = () => {
     

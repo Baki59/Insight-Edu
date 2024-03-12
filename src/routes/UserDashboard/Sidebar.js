@@ -4,13 +4,20 @@ import
   BsListCheck, BsMenuButtonWideFill, BsFillGearFill, BsPersonCircle, BsDashCircle, BsSpeedometer2}
  from 'react-icons/bs';
 import { useTranslation } from 'react-i18next';
-import '../CSS/UserDashboard.css'
+import '../CSS/UserDashboard.css';
+import HomeIcon from '@mui/icons-material/Home';
 
 
 function Sidebar({openSidebarToggle, OpenSidebar}) {
     const { t } = useTranslation();
   return (
     <aside id="userdashboard-sidebar" className={openSidebarToggle ? "sidebar-responsive": ""}>
+        {/* <div className='sidebar-title'>
+                <div className='sidebar-brand'>
+                <HomeIcon className='userdashboard-icon_header'/>
+                Home
+                </div>
+        </div> */}
         <div className='sidebar-title'>
             <div className='sidebar-brand'>
                 <BsPersonCircle  className='userdashboard-icon_header'/> Student Name

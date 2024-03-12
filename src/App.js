@@ -19,6 +19,7 @@ import SignUp from './routes/SIgnup';
 import Login from './routes/Login';
 import Enroll from './routes/Enroll';
 import CourseDetails from './routes/Course/CourseDetails';
+import CourseDetailsUser from './routes/Course/CourseDetailsUser';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path='/signup/login/userdashboard' element={<UserDashboard/>}/>
         <Route path='/course/enroll' element={<Enroll/>}/>
         <Route path='/course/coursedetails' element={<CourseDetails/>}/>
+        <Route path='/course/coursedetails/coursedetailsuser' element={<CourseDetailsUser/>}/>
       </Routes>     
     </div>
   );

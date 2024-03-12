@@ -22,7 +22,7 @@ function Course(){
     return(
         <div className="course-fullpage">
         <Navbar/> 
-        <div className="course-container centered">
+        <div className="course-course-container centered">
         <firstRowElement1 className="first-row-element-1 text-xl centered">
             {t("Courses")}
         </firstRowElement1>
@@ -43,11 +43,11 @@ function Course(){
         <CoverImageText/>
 
         {/*<div>Hey Git has been updated!!!!!....</div> */}
-
-        <Container>
+        
+        <div className="course-middle-container">
+            <CourseLeftBar className='course-course-leftbar'/>
             <Grid container my={4} spacing={1}
             className="course-grid">
-                <CourseLeftBar/>
             <Grid item xs sm md>
                 <CourseCard/>
             </Grid>
@@ -68,7 +68,7 @@ function Course(){
             </Grid>
         
         </Grid>
-        </Container>
+        </div>
 
         <Footer/>
 

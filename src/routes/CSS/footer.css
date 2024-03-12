@@ -14,3 +14,29 @@
     height: 10%;
 
 }
+.vertical_dotted_line
+{
+    border-left: 2px dotted white;
+    height: 200px;
+} 
+.footer-mail{
+    font-size: 15px;
+}
+
+@media screen and (max-width: 992px){
+    .footer-mail{
+        font-size: 10px;
+    }
+    .vertical_dotted_line
+    {
+        height: 300px;
+    } 
+}
+@media screen and (max-width: 760px){
+    .vertical_dotted_line
+    {
+        border-bottom: 2px dotted white;
+        width: 200px;
+        border-left: none;
+    } 
+}

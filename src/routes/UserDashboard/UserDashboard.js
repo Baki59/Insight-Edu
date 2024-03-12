@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar";
+// import Navbar from "../../components/Navbar";
 import { useState } from 'react'
 import Header from "./Header";
 import Home from "./Home";
@@ -14,7 +14,7 @@ function UserDashboard() {
 
   return (
     <div>
-    <Navbar/>
+    {/* <Navbar/> */}
     <div className='grid-container'>
       <Header OpenSidebar={OpenSidebar}/>
       <Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar}/>

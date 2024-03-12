@@ -16,7 +16,7 @@ const CourseCard = () => {
         navigate(path1);
     }
   return (
-    <Box width='300px' >
+    <Box width='300px' className='course-card-box'>
             <Card elevation={3} >
                 <CardMedia 
                     component='img'
@@ -25,27 +25,41 @@ const CourseCard = () => {
                     alt='Course'
                 />
                 <CardContent onClick={coursedetails} className='course-card-content'>
-                    <Typography gutterBottom variant="h5" component='div' color='text.primary'>
+                    <Typography gutterBottom variant="h5" component='div' color='#1556FC'>
                         SSC Complete Course 
 
                     </Typography>
-                    <Typography variant="body2" color='text.secondary'>
+                    <Typography variant="body2" color='black'>
                         Bangla, English, Math, Sociology, ICT
 
                     </Typography>
                 </CardContent>
-                <CardActions>
-                    <Button size='small'>Share</Button>
-                    <CardContent className='course-card-footer-content'>
-                        <Typography gutterBottom variant="h5" component='div' color='text.primary' fontSize={10} > 
+                <CardActions className='course-card-content'>
+                    <divreview className='course-card-review'>
+                    <div1> 
+                        <div11>60 Class</div11>
+                        <div12>|</div12>
+                        <div13>4 Months</div13>
+                    </div1>
+                    <div2>
+                        4.6*****(245)
+                    </div2>
+                    </divreview>
+                    {/* <Button size='small'>Share</Button> */}
+                    <div className='course-card-footer-content'>
+                        <div1> 
                             Course Fee 
-
-                        </Typography>
-                        <Typography variant="body2" color='text.secondary'>
-                            3000tk
-                        </Typography>
-                    </CardContent>
-                    <Button onClick={routeChange} className='enroll-button'>Enroll</Button>
+                        </div1>
+                        <div4>
+                            <div2>
+                                5000tk
+                            </div2>
+                            <div3>
+                                3000tk
+                            </div3>
+                        </div4>
+                    </div>
+                    <div onClick={routeChange} className='enroll-button'>Enroll</div>
 
                 </CardActions>
             </Card>

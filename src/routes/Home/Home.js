@@ -83,15 +83,15 @@ function Home(){
                     className="home-free-live-video-video"
                     
                 /> */}
-                <video className='home-free-live-video-video' autoPlay loop muted>
+                <video className='home-free-live-video-video' controls autoPlay loop muted>
                     <source src={IntroductionVideo} type='video/mp4'/>
                 </video>
                 </Grid>
                 
                 <Grid item xs sm md>
-                    <Typography gutterBottom variant="h5" color='text.primary' className="home-free-live-video-text1">
+                    <div className="home-free-live-video-text1">
                         Join Our Free Live Class
-                    </Typography> 
+                    </div> 
                     <Typography gutterBottom variant="h6" color='text.secondary' className="home-free-live-video-text2">
                     Education is an important part of human life. Education gives meaning to our life as it enables the growth and development of our mind and intellect. An educated society is an enlightened and empowered one. Such a society can make well-informed choices in its social, political and economic welfare.
                     </Typography>

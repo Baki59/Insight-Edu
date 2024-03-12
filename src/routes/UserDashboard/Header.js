@@ -1,13 +1,26 @@
 import React from 'react'
 import 
  {BsFillBellFill, BsFillEnvelopeFill, BsPersonCircle, BsSearch, BsJustify}
- from 'react-icons/bs'
+ from 'react-icons/bs';
+ import HomeIcon from '@mui/icons-material/Home';
+ import Home from './Home';
+import { useNavigate } from 'react-router-dom';
+
 
 function Header({OpenSidebar}) {
+  let navigate = useNavigate(); 
+    const routeChange = () =>{ 
+        let path = `../`; 
+        navigate(path);
+    }
   return (
     <div className='userdashboard-header'>
         <div className='userdashboard-menu-icon'>
             <BsJustify className='userdashboard-icon' onClick={OpenSidebar}/>
+        </div>
+        <div className='userdashboard-home-icon' onClick={routeChange}>
+          <HomeIcon/>
+          Home
         </div>
         <div className='userdashboard-header-left'>
             <BsSearch className='userdashboard-icon'/>

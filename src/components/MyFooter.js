@@ -12,6 +12,12 @@ import {
 } from "./FooterStyle";
 import logo from "../assets/logo.png";
 import '../routes/CSS/footer.css'
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import XIcon from '@mui/icons-material/X';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const Footer = () => {
 	return (
@@ -117,43 +123,54 @@ const Footer = () => {
 			<footer class="bg-white dark:bg-gray-900">
 			<Logo className="footer_logo"><img src={logo} alt="Logo" /></Logo>
 				<div class="mx-auto w-full max-w-screen-xl">
-				<div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+				<div class="grid grid-cols-2 gap-6 px-4 py-6 lg:py-8 md:grid-cols-6">
 					<div>
-						<h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
 						<ul class="text-gray-500 dark:text-gray-400 font-medium">
 							<li class="mb-4">
-								<a href="#" class=" hover:underline">About</a>
+								<LocationOnIcon/>
+								<a href="https://maps.app.goo.gl/875DGLDMMQDrgbHM6" class=" hover:underline">BTI Building Farmgate</a>
+								<div className="footer-mail">info@insightcarebd.com</div>
 							</li>
+							<h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+							<PhoneInTalkIcon/>
+							Phone</h2>
 							<li class="mb-4">
-								<a href="#" class="hover:underline">Careers</a>
-							</li>
-							<li class="mb-4">
-								<a href="#" class="hover:underline">Brand Center</a>
-							</li>
-							<li class="mb-4">
-								<a href="#" class="hover:underline">Blog</a>
+								
+								<div>
+								01745678901
+								01745678901
+								</div>
 							</li>
 						</ul>
 					</div>
+					<div class="vertical_dotted_line"></div>
 					<div>
-						<h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Help center</h2>
+						<h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Help center</h2>
 						<ul class="text-gray-500 dark:text-gray-400 font-medium">
 							<li class="mb-4">
-								<a href="#" class="hover:underline">Discord Server</a>
+								<YouTubeIcon/>
+								<a href="#" class="hover:underline">/insightcarebd</a>
 							</li>
 							<li class="mb-4">
-								<a href="#" class="hover:underline">Twitter</a>
+								<InstagramIcon/>
+								<a href="#" class="hover:underline">/insightcarebd</a>
 							</li>
 							<li class="mb-4">
-								<a href="#" class="hover:underline">Facebook</a>
+								<XIcon/>
+								<a href="#" class="hover:underline">/insightcarebd</a>
+							</li>
+							<li class="mb-4">
+								<FacebookIcon/>
+								<a href="#" class="hover:underline">/insightcarebd</a>
 							</li>
 							<li class="mb-4">
 								<a href="#" class="hover:underline">Contact Us</a>
 							</li>
 						</ul>
 					</div>
+					<div class="vertical_dotted_line"></div>
 					<div>
-						<h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+						<h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
 						<ul class="text-gray-500 dark:text-gray-400 font-medium">
 							<li class="mb-4">
 								<a href="#" class="hover:underline">Privacy Policy</a>
@@ -166,7 +183,7 @@ const Footer = () => {
 							</li>
 						</ul>
 					</div>
-					<div>
+					{/* <div>
 						<h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Download</h2>
 						<ul class="text-gray-500 dark:text-gray-400 font-medium">
 							<li class="mb-4">
@@ -182,7 +199,7 @@ const Footer = () => {
 								<a href="#" class="hover:underline">MacOS</a>
 							</li>
 						</ul>
-					</div>
+					</div> */}
 				</div>
 				<div class="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
 					<span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2023 <a href="https://flowbite.com/">Flowbite™</a>. All Rights Reserved.

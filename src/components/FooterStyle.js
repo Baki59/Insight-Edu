@@ -29,7 +29,7 @@ export const Logo = styled.div`
     border-bottom-right-radius: 80px 80px;
     background: #d8d8d8;
 
-	@media (max-width: 1460px) {
+	@media (max-width: 992px) {
 		width: 30%;
 		// padding: 70px 30px;
 	}
