@@ -1,0 +1,37 @@
+.course-module-accordion{
+    width: 80%;
+    align-items: center;
+    left: 10%;
+    margin-top: 5px;
+    border-width: 1px;
+    border-color: black;
+}
+/* .course-playcirclefield-icon{
+    background-color: aqua;
+} */
+
+.course-accordion-icon{
+    margin-right: 5px;
+}
+.course-free-video{
+    background-color: #24C78C;
+    color: white;
+    border-radius: 10px;
+    width: 134px;
+    height: 28px;
+    text-align: center;
+}
+.course-free-video-lock{
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    width: 134px;
+    height: 28px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 760px){
+    .course-module-accordion{
+        width: 80%;
+        
+    }
+}

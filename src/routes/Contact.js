@@ -21,10 +21,10 @@ function Contact() {
   return (
     <>
     <Navbar/>
-    <Typography className='contact-page-top-text'>
+    <div className='contact-page-top-text'>
     <h1>For knowing details about our course and our organisation fill up the form below. </h1>
     <h2>We will contact with you.</h2>
-    </Typography>
+    </div>
     
     <div className='contact-container'>
         <div className='contact-header'>

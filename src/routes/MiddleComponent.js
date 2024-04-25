@@ -1,10 +1,17 @@
 //import { Col, Container, Row } from "react-bootstrap";
 import "./CSS/MiddleComponent.css"
 import Middle_left_Image from '../assets/middle_left_box.png'
+import { useNavigate } from "react-router-dom";
 //import { Card, Typography } from "@mui/material";
 function MiddleComponent(){
+    let navigate = useNavigate(); 
+    const coursedetails = () =>{
+        let path1 = `/course/coursedetails`;
+        navigate(path1);
+    }
 
     return(
+        
         <div className="container_middle_comp">
             <div className="box-left">
                 <img 
@@ -43,8 +50,8 @@ function MiddleComponent(){
                         <li>Mentor Support</li>
                     </div>
                    </div>
-                    <div className="box-right-course-admit">
-                        Admit Now
+                    <div className="box-right-course-admit" onClick={coursedetails}>
+                        Enroll Now
                     </div>
                     
 

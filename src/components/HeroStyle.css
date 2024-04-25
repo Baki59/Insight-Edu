@@ -224,8 +224,12 @@
 @media screen and (max-width: 768px){
     .hero-cover-image{
         //position: relative;
-        width: 100%;
+        height: 400px;
         
+    }
+    .hero-login{
+        //grid-area: 'hero-login';
+        height: 85%;
     }
 
 }
@@ -240,7 +244,7 @@
     }
 
     .hero-login{
-        height: 60%;
+        height: 80%;
         position: absolute;
         left: 15%;
         width: 70%;

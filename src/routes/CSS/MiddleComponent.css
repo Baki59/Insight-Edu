@@ -125,6 +125,7 @@
     font-weight: bold;
     font-size: 15px;
     border-radius: 10px;
+    cursor: pointer;
     /* align-self: center; */
 }
 
@@ -142,7 +143,7 @@
         //right: 200px;
         left: 180px;
         background-color:#fcdfb2;
-        height: 500px;
+        height: 550px;
         width: 500px;
         //padding: 200px;
         //border-radius: 150px;
@@ -223,17 +224,32 @@
     .box-right{
         position: absolute;
         transform: translate(-50%, -50%);
-        top: 50%;
+        top: 60%;
         left: 50%;
         width: 90%;
     }
 }
-@media screen and (max-width: 760px){
+@media screen and (max-width: 770px){
     .box-right{
         position: absolute;
         transform: translate(-50%, -50%);
-        top: 50%;
+        top: 60%;
         //left: 50%;
+    }
+    .box-right-sub{
+        font-size: 20px;
+    }
+    .box-right-sub-duration1{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .box-right-course-feature{
+        font-size: 20px;
+    }
+    .box-right-course-admit{
+        padding: 15px;
+        font-weight: bold;
+        font-size: 20px;
     }
 }
 
@@ -241,7 +257,7 @@
     .box-right{
         position: absolute;
         transform: translate(-50%, -50%);
-        top: 50%;
+        top: 60%;
         //left: 50%;
         width: 95%;
     }

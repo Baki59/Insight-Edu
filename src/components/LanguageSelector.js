@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import i18n from '../i18n';
 import "./languageselector.css"
+import PublicIcon from '@mui/icons-material/Public';
 
 const LanguageSelector = () => {
     
@@ -15,6 +16,7 @@ const LanguageSelector = () => {
 
     return (
         <select defaultValue={selectedLanguage} onChange={chooseLanguage} className="language">  
+        <PublicIcon/>
             <option value="be">Bengali</option>
             <option value="en">English</option>
         </select>

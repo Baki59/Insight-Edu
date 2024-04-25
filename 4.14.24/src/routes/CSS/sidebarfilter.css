@@ -1,0 +1,134 @@
+#course-filter-sidebar {
+  display: none;
+}
+@media only screen and (max-width: 760px){
+  #course-filter-sidebar {
+    display: block;
+    height: 100%;
+    background-color: #263043;
+    overflow-y: auto;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  
+  .course-filter-sidebar-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 0px 30px;
+    margin-bottom: 30px;
+    color: white;
+  }
+  .sidebar-filter-icon {
+    vertical-align: middle;
+    margin-top: 5px;
+    //line-height: 5px;
+    font-size: 20px;
+  }
+  .course-filter-icon_header{
+    vertical-align: middle;
+    line-height: 1px;
+    font-size: 26px;
+    color: white;
+  }
+  .sidebar-filter-icon, .course-filter-icon_header {
+    margin-right: 5px;
+  }
+  .course-filter-close_icon {
+    color: red;
+    margin-left: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .course-filter-sidebar-title-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 0px 30px;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .course-filter-sidebar-title > span {
+    display: none;
+  }
+  
+  .course-filter-sidebar-brand {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .course-filter-sidebar-list {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .course-filter-sidebar-list-item {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 20px 20px 20px;
+    font-size: 18px;
+  }
+
+  .course-filter-sidebar-list-item-title{
+    color: white;
+    font-size: 20px;
+    margin-left: 5px;
+  }
+  
+  .course-filter-sidebar-list-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+  
+  .course-filter-sidebar-list-item > a {
+    text-decoration: none;
+    color: #9e9ea4;
+  }
+  
+  .course-filter-sidebar-responsive {
+    top: 80px;
+    display: inline !important;
+    left: 0px;
+    position: absolute;
+    width: 80%;
+    /*
+      we want the z-index of the sidebar higher so that
+      the charts are not showing over the sidebar 
+      on small screens
+    */
+    z-index: 12 !important;
+  }
+  /* End Sidebar  */
+
+  .course-sidebar-filter-box1-header{
+      color: blue;
+      font-size: large;
+      font-weight: bold;
+  }
+  .course-sidebar-filter-form-control1{
+      display: inline;
+      border-radius: 17px;
+      background-color: #FDE0B2;
+      width: 277px;
+      height: 230px;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .course-sidebar-filter-form-control2{
+      display: inline;
+      border-radius: 17px;
+      background-color: #ECE1E1;
+      width: 277px;
+      height: 1085px;
+      border-width: 2px;
+      border-color: black;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+  }
+}
+

@@ -16,6 +16,10 @@ function Login() {
         let path = `./userdashboard`; 
         navigate(path);
     }
+    const routeChange1 = () =>{ 
+        let path = `../signup`; 
+        navigate(path);
+    }
   return (
     <>
     <Navbar/>
@@ -34,6 +38,7 @@ function Login() {
                 <input type='password' placeholder='Password'/>
             </div>
             <div className='signup-forgot-password'>Forgot Password? <span>Click Here</span></div>
+            <div className='signup-forgot-password'>Not Registered? <span onClick={routeChange1}>Sign Up</span></div>
             <div className='signup-submit-container'>
                 <div className='signup-submit' onClick={routeChange}>LogIn</div>
             </div>

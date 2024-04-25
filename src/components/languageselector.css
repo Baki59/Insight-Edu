@@ -1,4 +1,28 @@
 .language{
     position: relative;
     //left: 10%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+}
+@media screen and (max-width: 1150px){
+    .language{
+        right: -420px;
+    }
+}
+@media screen and (max-width: 960px){
+    .language{
+        right: -300px;
+    }
+}
+@media screen and (max-width: 760px){
+    .language{
+        right: -220px;
+    }
+}
+@media screen and (max-width: 560px){
+    .language{
+        right: -110px;
+    }
 }

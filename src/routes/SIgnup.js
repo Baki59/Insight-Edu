@@ -39,11 +39,15 @@ function SignUp() {
                 <RiLockPasswordLine className='signup-img'/>
                 <input type='password' placeholder='Password'/>
             </div>
+            <div className='signup-input'>
+                <RiLockPasswordLine className='signup-img'/>
+                <input type='password' placeholder='Confirm Password'/>
+            </div>
             <div className='signup-forgot-password'>Forgot Password? <span>Click Here</span></div>
+            
             <div className='signup-submit-container'>
                 <div className='signup-submit'>Sign Up</div>
                 <div className='signup-submit' onClick={routeChange}>LogIn</div>
-
             </div>
         </div>
     </div>
