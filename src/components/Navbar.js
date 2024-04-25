@@ -29,6 +29,10 @@ const Navbar = () => {
         let path = `../signup`; 
         navigate(path);
     }
+    const routeChangeMyAccount = () =>{ 
+        let path1 = `/signup/login/userdashboard`; 
+        navigate(path1);
+    }
 
     //------------For Profile Menu-----------------
     const [anchorEl, setAnchorEl] = useState(null);
@@ -114,7 +118,7 @@ const Navbar = () => {
                     <MenuItem onClick={handleClose}>My Courses</MenuItem>
                     <MenuItem onClick={handleClose}>Exam</MenuItem>
                     <MenuItem onClick={handleClose}>Certificate</MenuItem>
-                    <MenuItem onClick={handleClose}>My account</MenuItem>
+                    <MenuItem onClick={routeChangeMyAccount}>My account</MenuItem>
                     <MenuItem onClick={handleClose}>Settings</MenuItem>
                     <MenuItem onClick={handleClose}>Logout</MenuItem>
                 </Menu>
