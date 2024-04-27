@@ -1,0 +1,10 @@
+.enrolled-courses-course-card{
+    justify-content: center;
+    gap: 10px;
+}
+.enrolled-courses-headline{
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}

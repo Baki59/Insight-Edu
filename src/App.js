@@ -21,6 +21,7 @@ import Enroll from './routes/Enroll';
 import CourseDetails from './routes/Course/CourseDetails';
 import CourseDetailsUser from './routes/Course/CourseDetailsUser';
 import {useEffect} from 'react'
+import EnrolledCourses from './routes/UserDashboard/EnrolledCourses';
 
 function App() {
   const pathname=useLocation();
@@ -40,6 +41,7 @@ function App() {
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/signup/login' element={<Login/>}/>
         <Route path='/signup/login/userdashboard' element={<UserDashboard/>}/>
+        <Route path='/signup/login/userdashboard/enrolledcourses' element={<EnrolledCourses/>}/>
         <Route path='/course/enroll' element={<Enroll/>}/>
         <Route path='/course/coursedetails' element={<CourseDetails/>}/>
         <Route path='/course/coursedetails/coursedetailsuser' element={<CourseDetailsUser/>}/>

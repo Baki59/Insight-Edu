@@ -6,10 +6,17 @@ import
 import { useTranslation } from 'react-i18next';
 import '../CSS/UserDashboard.css';
 import HomeIcon from '@mui/icons-material/Home';
+import { Link,useNavigate } from "react-router-dom";
+
 
 
 function Sidebar({openSidebarToggle, OpenSidebar}) {
     const { t } = useTranslation();
+    let navigate = useNavigate(); 
+    const gotoEnrolledCoursesPage = () =>{ 
+        let path = `/signup/login/userdashboard/enrolledcourses`; 
+        navigate(path);
+    }
   return (
     <aside id="userdashboard-sidebar" className={openSidebarToggle ? "sidebar-responsive": ""}>
         {/* <div className='sidebar-title'>
@@ -42,7 +49,7 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
                 <a href="">
                     <BsFillGrid3X3GapFill className='userdashboard-icon'/> 
                 </a>
-                <text className='sidebar-list-item-title'>{t("ENROLLED COURSES")}</text>
+                <text className='sidebar-list-item-title' onClick={gotoEnrolledCoursesPage}>{t("ENROLLED COURSES")}</text>
             </li>
             <li className='sidebar-list-item'>
                 <a href="">

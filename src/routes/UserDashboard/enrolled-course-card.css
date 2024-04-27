@@ -1,0 +1,71 @@
+/* .course-card-box{
+    border-radius: 20px;
+
+} */
+.enrolled-course-card-box{
+    width: 350px;
+}
+
+.enrolled-course-card-box Card{
+    background-color: #ECE1E1;
+}
+.enrolled-course-card-content{
+    justify-content: center;
+    cursor: pointer;
+    background-color: #ECE1E1;
+}
+.enrolled-course-card-content Typography{
+    color: #1556FC;
+    width: 104px;
+    height: 60px;
+}
+
+.enrolled-course-card-review{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}
+
+.enrolled-course-card-review div1{
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+}
+.enrolled-course-card-review div11{
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: 16px;
+}
+.enrolled-course-card-review div12{
+    display: flex;
+    flex-direction: column;
+    width: 4px;
+    height: 15px;
+    color: #EA8208;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.enrolled-course-card-review div13{
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: 16px;
+}
+.enrolled-course-card-review div2{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    font-weight: 500;
+}
+.enrolled-course-card-review div21{
+    color: #EA8208;
+}
+
+/* @media screen and (max-width: 760px){
+    .course-card-box{
+        width: 300px;
+    }
+} */
