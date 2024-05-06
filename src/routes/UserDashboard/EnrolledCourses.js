@@ -5,9 +5,10 @@ import '../CSS/enrolledcourses.css'
 import EnrolledCourseCard from './EnrolledCourseCard'
 
 
-const EnrolledCourses = () => {
+const EnrolledCourses = ({enrolledCourses}) => {
   return (
-    <div>
+    enrolledCourses &&
+    <div className='enrolled-courses-main'>
     <div className='enrolled-courses-headline'>Your Enrolled Courses</div>
     <Grid container className='enrolled-courses-course-card'>
         <EnrolledCourseCard/>

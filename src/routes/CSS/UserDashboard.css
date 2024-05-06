@@ -38,7 +38,8 @@
     grid-template-rows: 0.2fr 3fr;
     grid-template-areas:
       'sidebar header header header'
-      'sidebar main main main';
+      'sidebar main main main'
+      'sidebar enrolled-courses-main enrolled-courses-main enrolled-courses-main';
     height: 100vh;
   }
   

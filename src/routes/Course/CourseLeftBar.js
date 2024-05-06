@@ -34,7 +34,7 @@ const CourseLeftBar = () => {
                 <Grid item xs sm md>
                 <FormControl sx={{ m: 3 }} className='course-left-bar-form-control2'>
                     <FormLabel className="course-left-box1-header">Course Catergory</FormLabel>
-                    <FormGroup>
+                    <FormGroup className='course-left-bar-formgroup'>
                     <FormControlLabel
                         control={
                         <Checkbox />

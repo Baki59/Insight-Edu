@@ -7,7 +7,7 @@ import
  from 'recharts';
 import { useTranslation } from 'react-i18next';
 
-function Home() {
+function Home({dashboard}) {
   const { t } = useTranslation();
   const toBn = n => n.replace(/\d/g, d => "০১২৩৪৫৬৭৮৯"[d])
 
@@ -58,6 +58,7 @@ function Home() {
      
 
   return (
+    dashboard &&
     <main className='main-container'>
         <div className='main-title'>
             <h3>{t("DASHBOARD")}</h3>

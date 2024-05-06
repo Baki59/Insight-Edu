@@ -139,6 +139,9 @@ body {
     .home-grid{
         padding: 200px;
     }
+    .home-trending-courses{
+        margin-top: 60px;
+    }
 }
 
 @media screen and (max-width: 760px){

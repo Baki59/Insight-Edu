@@ -102,10 +102,11 @@
   }
   /* End Sidebar  */
 
-  .course-sidebar-filter-box1-header{
+  .course-sidebar-filter-left-box1-header{
       color: blue;
       font-size: large;
       font-weight: bold;
+      margin-top: 10%;
   }
   .course-sidebar-filter-form-control1{
       display: inline;
@@ -126,9 +127,10 @@
       height: 1085px;
       border-width: 2px;
       border-color: black;
-      align-content: center;
-      align-items: center;
-      justify-content: center;
+  }
+  .course-left-bar-filter-formgroup{
+    margin-top: 10%;
+    margin-left: 10%;
   }
 }
 

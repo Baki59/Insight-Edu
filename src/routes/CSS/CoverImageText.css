@@ -1,6 +1,6 @@
 .CoverImageText{
     position: absolute;
-    top: 300px;
+    top: 200px;
     left: 150px;
 }
 .CoverImageText-text1{
@@ -15,7 +15,7 @@
     color: #e98107;
 }
 
-@media only screen and (max-width: 1060px){
+@media only screen and (max-width: 960px){
     .CoverImageText{
         display: none;
     }

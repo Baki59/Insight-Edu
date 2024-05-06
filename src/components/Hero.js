@@ -1,10 +1,15 @@
 import "./HeroStyle.css";
-import React from "react";
+import React,{useState} from "react";
 import Banner from "../assets/Banner.jpg"
 import Tagline from "../assets/Group 43.png"
-import { TextInput } from "flowbite-react";
+import HeroSubmitPopUpMessage from "./HeroSubmitPopUpMessage";
 
 function Hero(){
+    const [popUpMessage, setPopUpMessage] = useState(false);
+
+    const PopUpMessageWindow =()=>{
+        setPopUpMessage(!popUpMessage);
+    }
     return (
         
         <div className="hero">
@@ -39,12 +44,20 @@ function Hero(){
                     <div className='hero-input'>
                         <input type='phone' placeholder='Phone'/>
                     </div>
-                    <div className='hero-submit-container'>
+                    <div className='hero-input'>
+                        <input type='email' placeholder='Email'/>
+                    </div>
+                    <div className='hero-submit-container' onClick={PopUpMessageWindow}>
                         <div className='hero-submit' >Submit</div>
 
                     </div>
                 </div>
             </div>
+            <HeroSubmitPopUpMessage trigger={popUpMessage} setTrigger={setPopUpMessage} className='hero-pop-up-message'>
+                <div className="pop-up-message">
+                Thank you for contacting us. We will contact you soon.
+                </div>
+            </HeroSubmitPopUpMessage>
         </div>
 
         

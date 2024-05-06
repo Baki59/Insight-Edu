@@ -32,6 +32,9 @@
 @media only screen and (max-width: 760px){
     .course-module-accordion{
         width: 80%;
-        
+        top: 80px;
+    }
+    .course-free-video-lock{
+        width: 60px;
     }
 }

@@ -53,8 +53,8 @@ const CourseDetailsUser = () => {
     <div>
         <Navbar/>
 
-        <div className="course-details-course-container course-details-centered">
-        {/* <firstRowElement1 className="course-details-first-row-element-1 text-xl course-details-centered">
+        {/* <div className="course-details-course-container course-details-centered">
+        <firstRowElement1 className="course-details-first-row-element-1 text-xl course-details-centered">
             {t("Courses")}
         </firstRowElement1>
         <input 
@@ -67,8 +67,8 @@ const CourseDetailsUser = () => {
         
         <firstRowElement4 className="course-details-first-row-element-4 text-xl course-details-centered">
             {t("Join Free Class")}
-        </firstRowElement4> */}
-        </div>
+        </firstRowElement4>
+        </div> */}
         <div className='course-course-deatils-accordion'>
           <div className='course-course-deatils-accordion-left'>
             <CourseDetailsAccordion/>
@@ -89,10 +89,10 @@ const CourseDetailsUser = () => {
               </div>
             </div>
             <div className='course-details-video-controls'>
-            <div1>Prev</div1>
-            <div2><ArrowBackIosIcon/></div2>
-            <div3><ArrowForwardIosIcon/></div3>
-            <div4>Next</div4>
+              <div1>Prev</div1>
+              <div2><ArrowBackIosIcon/></div2>
+              <div3><ArrowForwardIosIcon/></div3>
+              <div4>Next</div4>
             </div>
             <video src={Lecture1} title='Lecture 1' controls autoplay="true"  className='lecture1-video' muted ref={videoPlayerRef}/> 
             <div className="course-details-user-container">

@@ -130,7 +130,7 @@
 }
 
 
-@media screen and (max-width: 1460px){
+/* @media screen and (max-width: 1460px){
     .box-left{
         display: none;
     }
@@ -210,15 +210,15 @@
         color: white;
         width: fit-content;
         position: relative;
-        /* top: 50%;
-        left: 50%; */
+        //top: 50%;
+        //left: 50%;
         transform: translate(-50%, -50%);
         //padding: 5px;
         font-weight: bold;
-        /* align-self: center; */
+        //align-self: center;
     }
     
-}
+} */
 
 @media screen and (max-width: 1260px){
     .box-right{

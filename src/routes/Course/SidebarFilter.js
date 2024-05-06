@@ -20,9 +20,9 @@ function LeftSidebarFilter({openFilterbarToggle,OpenSideFilterbar}) {
                 </div>
         </div> */}
         <div className='sidebar-title'>
-            <div className='sidebar-brand'>
+            {/* <div className='sidebar-brand'>
                 <BsPersonCircle  className='userdashboard-icon_header'/> Student Name
-            </div>
+            </div> */}
             <span className='userdashboard-icon userdashboard-close_icon' onClick={OpenSideFilterbar}>X</span>
         </div>
 
@@ -53,7 +53,7 @@ function LeftSidebarFilter({openFilterbarToggle,OpenSideFilterbar}) {
                 </FormControl>
                 <FormControl sx={{ m: 3 }} className='course-sidebar-filter-form-control2'>
                     <FormLabel className="course-sidebar-filter-left-box1-header">Course Catergory</FormLabel>
-                    <FormGroup>
+                    <FormGroup className='course-left-bar-filter-formgroup'>
                     <FormControlLabel
                         control={
                         <Checkbox />

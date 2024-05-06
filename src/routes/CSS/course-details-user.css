@@ -1,4 +1,4 @@
-.course-details-course-container{
+/* .course-details-course-container{
     display: flex;
     flex-direction: row;
     display: grid;
@@ -6,7 +6,7 @@
     grid-template-areas: 'firstRowElement1 input firstRowElement3 firstRowElement4';
     grid-gap: 10px;
     padding-top: 100px;
-}
+} */
 
 .course-details-first-row-element-1{
     grid-area: firstRowElement1;
@@ -93,7 +93,8 @@
 }
 .course-course-deatils-accordion{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    padding-top: 100px;
 }
 .course-course-deatils-accordion-left{
     display: flex;
@@ -144,7 +145,7 @@
     display: flex;
     flex-direction: row;
     background-color: #FBF7F7;
-    width: 869px;
+    width: 70%;
     height: 119px;
     border-radius: 7px;
     box-shadow: '1px 2px 9px #F4AAB9';
@@ -162,7 +163,7 @@
 .course-details-user-quiz{
     display: flex;
     flex-direction: column;
-    width: 867px;
+    width: 70%;
     height: 177px;
     background-color: #FBF7F7;
     border-radius: 7px;
@@ -205,7 +206,7 @@
     height: 47px;
     background-color: #58C233;
     color: white;
-    margin-left: 100px;
+    //margin-left: 100px;
     justify-content: center;
     align-items: center;  
     border-radius: 3px;  
@@ -214,18 +215,19 @@
 .course-details-user-quiz-prev{
     display: flex;
     flex-direction: column;
-    width: 867px;
+    width: 70%;
     height: 300px;
     background-color: #FBF7F7;
     border-radius: 7px;
     margin-left: 30px;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .course-details-user-quiz-prev div1{
     display: flex;
     flex-direction: row;
-    width: 275px;
+    width: 30%;
     height: 55px;
     background-color: #1148B2;  
     color: white;
@@ -238,7 +240,7 @@
 .course-details-user-quiz-prev div2{
     display: flex;
     flex-direction: row;
-    gap: 150px;
+    gap: 100px;
 }
 .course-details-user-quiz-prev div3{
     display: flex;
@@ -336,7 +338,7 @@
 .course-details-user-comment{
     display: flex;
     flex-direction: column;
-    width: 867px;
+    width: 70%;
     height: 300px;
     background-color: #FBF7F7;
     border-radius: 7px;
@@ -398,27 +400,173 @@
 }
 
 @media only screen and (max-width: 960px){
-    /* .lecture1-video{
-        
-    } */
+    
     /* .course-details-centered{
         padding-left: 10px;
     } */
-    .course-details-course-container{
+    /* .course-details-course-container{
         display: grid;
         grid-template-rows: repeat(auto-fit, 0.15fr);
         grid-template-areas: 'firstRowElement1' 'input' 'firstRowElement3' 'firstRowElement4';
+    } */
+    .course-details-user-container{
+        width: 40%;
+        align-items: flex-start;
+        padding: 30px;
+    }
+    .course-course-deatils-accordion{
+        display: flex;
+        flex-direction: column;
     }
     .course-course-deatils-accordion-left{
-        display: flex;
-        flex-direction: row;
+        display: none;
     }
     .course-course-deatils-accordion-right{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     .course-details-video-controls{
         display: flex;
         flex-direction: row;
     }
+    .lecture1-video{
+        width: 50%;
+    }
+    .course-course-deatils-accordion-right-top{
+        display: flex;
+        flex-direction: column;
+    }
+    .course-course-deatils-accordion-right-progress{
+        width: 50%;
+        align-self: flex-start;
+    }
+    .course-course-deatils-accordion-right-top-text{
+        font-size: 20px;
+        align-items: flex-start;
+    }
+    .course-details-user-exam{
+        font-size: 18px;
+        
+    }
+    .course-details-user-exam-box{
+        gap: 20px;
+        //align-self: center;
+        //align-items: center;
+        font-size: 20px;
+        margin-left: 5px;
+        width: 50%;
+    }
+    .course-details-user-exam-box-TaskAltIcon{
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .course-details-user-quiz{
+        margin-left: 5px;
+        width: 50%;
+    }
+    .course-details-user-quiz div2{
+        font-size: 18px;
+        gap: 5px;
+        
+    }
+    .course-details-user-quiz-prev{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        height: 700px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+    }
+    .course-details-user-quiz-prev div6{
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .course-details-user-quiz-prev div1{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        height: 75px;
+        font-size: 28px;
+    }
+    .course-details-user-quiz-prev div2{
+        display: flex;
+        flex-direction: column;
+        //gap: 250px;
+    }
+    .course-details-user-quiz-prev div5{
+        margin-top: 120px;
+    }
+    .course-details-user-quiz-prev div521{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: white;
+        top: 50%;
+        left: 50%;
+        margin: -50px 0px 0px -50px;
+        position: absolute;
+    }
+    .course-details-user-quiz-prev div521 text1{
+        display: flex;
+        flex-direction: row;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    .course-details-user-quiz-prev div521 text2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-weight: bold;
+        color: #58C233;
+    }
+    
+    .course-details-user-quiz-prev div6{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .course-details-user-quiz-prev div6 div61{
+        width: 162px;
+        height: 37px;
+        background-color: #1556FC;
+        border-radius: 3px;
+        color: white;
+        font-size: 15px;
+        padding: 5px;
+        font-weight: 600;
+    }
+    .course-details-user-quiz-prev div6 div62{
+        width: 162px;
+        height: 37px;
+        background-color: #58C233;
+        border-radius: 3px;
+        color: white;
+        padding: 5px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .course-details-user-quiz-prev div6 div63{
+        width: 119px;
+        height: 37px;
+        background-color: #1556FC;
+        border-radius: 3px;
+        color: white;
+        justify-content: center;
+        align-self: center;
+        margin-top: 10px;
+        padding: 5px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .course-details-user-comment{
+        width: 50%;
+        height: 300px;
+    }
+    .course-details-user-comment div221{
+        font-size: 15px;
+        
+    }
+    
 }

@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: row;
     /* width: 100%; */
-    height: 15vh;
+    height: 10vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, 0.15fr);
     grid-template-areas: 'firstRowElement1 input firstRowElement3 firstRowElement4';
@@ -92,6 +92,7 @@
 .course-cover-image{
     position: relative;
     width: 100%;
+    margin-bottom: 20px;
 }
 .course-dropdown1{
     display: none;
@@ -150,6 +151,7 @@
     color: blue;
     font-size: large;
     font-weight: bold;
+    margin-top: 10%;
 }
 
 .course-left-box2{
@@ -173,16 +175,20 @@
 }
 
 .course-left-bar-form-control2{
-    display: inline;
+    //display: inline;
     border-radius: 17px;
     background-color: #ECE1E1;
     width: 277px;
     height: 1085px;
     border-width: 2px;
     border-color: black;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
+    //align-content: center;
+    //align-items: center;
+    //justify-content: center;
+}
+.course-left-bar-formgroup{
+    margin-top: 10%;
+    margin-left: 10%;
 }
 
 .course-middle-container{
@@ -195,7 +201,7 @@
     flex-direction: column;
 }
 
-@media only screen and (max-width: 1060px){
+@media only screen and (max-width: 960px){
     .course-course-container{
         padding: 100px;
         position: relative;
@@ -228,7 +234,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 100px;
+        gap: 50px;
         position: absolute;
         margin-top: 90px;
         border-radius: 4px;
@@ -248,7 +254,7 @@
         border-radius: 50px;
         border-width: 1px;
         border-color: black;
-        width: 100px;
+        width: 200px;
         //margin-bottom: 10px;
     }
     .course-leftbar{

@@ -1,0 +1,56 @@
+.profile-main{
+    position: relative;
+    left: 20%;
+    border-width: 2px;
+    border-color: black;
+    height: 600px;
+    top: 5%;
+    width: 700px;
+
+}
+.profile-info{
+    margin-top: 5%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 80%;
+}
+.profile-info update{
+    background-color: green;
+    width: 80px;
+    border-radius: 20px;
+    color: white;
+    padding: 5px;
+    align-self: center;
+}
+.profile-info-1{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.profile-info-1 input{
+    border-width: 1px;
+    padding: 10px;
+    width: 200px;
+}
+.profile-info-1 label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.profile-info-2{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.profile-info-2 input{
+    border-width: 1px;
+    padding: 10px;
+    width: 400px;
+}
+.profile-info-2 label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
