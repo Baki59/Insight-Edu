@@ -48,7 +48,7 @@ function SignUp() {
                 <RiLockPasswordLine className='signup-img'/>
                 <input type='password' placeholder='Confirm Password'/>
             </div>
-            <div className='signup-forgot-password'>Forgot Password? <span>Click Here</span></div>
+            <div className='signup-forgot-password'>Already registered? <span onClick={routeChange}>Please Login</span></div>
             
             <div className='signup-submit-container'>
                 <div className='signup-submit'>Sign Up</div>

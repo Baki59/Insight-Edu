@@ -14,9 +14,10 @@
     font-size: 20px;
   }
   .userdashboard-icon_header {
+    margin-left: 40px;
     vertical-align: middle;
     line-height: 1px;
-    font-size: 26px;
+    font-size: 50px;
     color: white;
   }
   .userdashboard-icon, .userdashboard-icon_header {
@@ -70,8 +71,10 @@
   }
   .header-search{
     height: 60px;
-    width: 100%;
-    //border-width: 3px;
+    width: 400px;
+    border-width: 1px;
+    border-color: white;
+    padding: 10px;
   }
   .userdashboard-home-icon{
     font-size: 20px;

@@ -68,30 +68,30 @@ function Home({dashboard}) {
             <div className='card'>
                 <div className='card-inner'>
                     <h3>{t("COURSES")}</h3>
-                    <BsFillArchiveFill className='card_icon'/>
+                    {/* <BsFillArchiveFill className='card_icon'/> */}
                 </div>
                 <h1>{t("3")}{t("0")}{t("0")}</h1>
             </div>
             <div className='card'>
                 <div className='card-inner'>
+                    <h3>{t("RUNNING")}</h3>
+                    {/* <BsFillBellFill className='card_icon'/> */}
+                </div>
+                <h1>{t("4")}{t("2")}</h1>
+            </div>
+            <div className='card'>
+                <div className='card-inner'>
                     <h3>{t("COMPLETED")}</h3>
-                    <BsFillGrid3X3GapFill className='card_icon'/>
+                    {/* <BsFillGrid3X3GapFill className='card_icon'/> */}
                 </div>
                 <h1>{t("1")}{t("2")}</h1>
             </div>
             <div className='card'>
                 <div className='card-inner'>
                     <h3>{t("EXAMS")}</h3>
-                    <BsPeopleFill className='card_icon'/>
+                    {/* <BsPeopleFill className='card_icon'/> */}
                 </div>
                 <h1>{t("3")}{t("3")}</h1>
-            </div>
-            <div className='card'>
-                <div className='card-inner'>
-                    <h3>{t("RUNNING")}</h3>
-                    <BsFillBellFill className='card_icon'/>
-                </div>
-                <h1>{t("4")}{t("2")}</h1>
             </div>
         </div>
 

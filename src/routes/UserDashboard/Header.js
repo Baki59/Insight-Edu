@@ -20,7 +20,7 @@ function Header({OpenSidebar}) {
         </div>
         <div className='userdashboard-home-icon' onClick={routeChange}>
           <HomeIcon/>
-          Home
+          Insight Home
         </div>
         <div className='userdashboard-header-left'>
             <BsSearch className='userdashboard-icon'/>
