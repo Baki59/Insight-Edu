@@ -224,7 +224,7 @@ const CourseDetails = () => {
             Course Curriculum
         </div>
 
-        <CourseAccordion/>
+        <CourseAccordion className="course-details-accordion1"/>
 
         
 

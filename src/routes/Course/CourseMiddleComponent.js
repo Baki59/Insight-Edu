@@ -96,7 +96,7 @@ function CourseMiddleComponent(){
                     <div>Previous Amount: 5000</div>
                     <div>Payable Amount: 4000</div>
                 </div> */}
-                <button >SignUp & Pay Now</button>
+                <div className="course-middle-component-submit-button">SignUp & Pay Now</div>
             </CourseEnrollPopUp>
             
         </div>

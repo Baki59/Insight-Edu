@@ -1,4 +1,4 @@
-.course-details-popup{
+.course-details-lock-popup{
     position: fixed;
     top: 0;
     left: 0;
@@ -12,16 +12,16 @@
     z-index: 99;
 }
 
-.course-details-popup-inner{
+.course-details-lock-popup-inner{
     position: relative;
     padding: 32px;
     width: 60%;
     height: 60%;
     //max-width: 640px;
-    background-color: #fff;
+    background-color: #FBB03B;
 }
 
-.close-btn{
+.course-details-lock-close-btn{
     position: absolute;
     top: 16px;
     right: 16px;

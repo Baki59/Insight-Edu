@@ -364,5 +364,9 @@
     .course-middle-text{
         margin-bottom: 50px;
     }
+    .course-details-text-3{
+        position: relative;
+        margin-top: 100px;
+    }
 
 }

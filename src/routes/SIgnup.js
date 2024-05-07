@@ -4,6 +4,7 @@ import { BsPerson } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { RiLockPasswordLine } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
+import { FaPhoneAlt } from "react-icons/fa";
 import Navbar from '../components/Navbar';
 import Footer from "../components/MyFooter";
 
@@ -30,6 +31,10 @@ function SignUp() {
             <div className='signup-input'>
                 <BsPerson className='signup-img'/>
                 <input type='text' placeholder='Name'/>
+            </div>
+            <div className='signup-input'>
+                <FaPhoneAlt className='signup-img'/>
+                <input type='number' placeholder='Phone'/>
             </div>
             <div className='signup-input'>
                 <HiOutlineMail className='signup-img'/>

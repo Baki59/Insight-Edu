@@ -386,8 +386,9 @@
     font-size: 20px;
     
 }
-.course-details-user-comment div221 input{
+.course-details-user-comment div221 textarea{
     outline-color: #FBF7F7;
+    width: 600px;
     
 }
 .course-details-user-comment div222{
@@ -565,7 +566,12 @@
         height: 300px;
     }
     .course-details-user-comment div221{
-        font-size: 15px;
+        font-size: 10px;
+        
+    }
+    .course-details-user-comment div221 textarea{
+        outline-color: #FBF7F7;
+        width: 200px;
         
     }
     

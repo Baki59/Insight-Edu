@@ -5,7 +5,7 @@ const CourseEnrollPopUp = (props) => {
   return (props.trigger) ? (
     <div className='course-details-popup'>
         <div className='course-details-popup-inner'>
-            <button className='close-btn' onClick={() => props.setTrigger(false)}>Close</button>
+            <div className='close-btn' onClick={() => props.setTrigger(false)}>Close</div>
                 {props.children}
         </div>
     </div>

@@ -2,7 +2,7 @@
     width: 80%;
     align-items: center;
     left: 10%;
-    margin-top: 5px;
+    //margin-top: 5px;
     border-width: 1px;
     border-color: black;
 }
@@ -28,11 +28,34 @@
     height: 28px;
     text-align: center;
 }
+.course-details-lock-pop-up-message-container{
+    display: flex;
+    flex-direction: row;
+}
+.course-details-lock-pop-up-message{
+    margin-top: 15%;
+    font-size: 25px;
+    font-weight: 500;
+}
+.course-lock-pop-up-enroll-button{
+    margin-top: 40px;
+    background-color: green;
+    width: 60px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-left: 50%;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 760px){
+    .course-module-accordion-main{
+        margin-bottom: 50px;
+    }
     .course-module-accordion{
         width: 80%;
-        top: 80px;
+        top: 30px;
     }
     .course-free-video-lock{
         width: 60px;

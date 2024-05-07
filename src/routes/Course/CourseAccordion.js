@@ -21,7 +21,7 @@ import EventNoteIcon from '@mui/icons-material/EventNote';
 import QuizIcon from '@mui/icons-material/Quiz';
 import { useNavigate } from 'react-router-dom';
 //import Typography from '@mui/material/Typography';
-
+import CourseDetailsLockPopUpMessage from './CourseDetailsLockPopUpMessage';
 
 const Accordion = styled((props) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -62,6 +62,11 @@ const Accordion = styled((props) => (
 
 const CourseAccordion = () => {
     const [expanded, setExpanded] = useState('panel1');
+    const [lockPopUpMessage, setLockPopUpMessage] = useState(false);
+
+    const LockPopUpMessageWindow =()=>{
+        setLockPopUpMessage(!lockPopUpMessage);
+    }
 
     const handleChange = (panel) => (event, newExpanded) => {
         setExpanded(newExpanded ? panel : false);
@@ -72,9 +77,13 @@ const CourseAccordion = () => {
         let path = `./coursedetailsuser`; 
         navigate(path);
     }
+    const gotoCourseDetailsPage = () =>{ 
+        let path = `./#`; 
+        navigate(path);
+    }
 
     return (
-        <div>
+        <div className='course-module-accordion-main'>
         <Accordion defaultExpanded className='course-module-accordion' expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
             <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -928,13 +937,21 @@ const CourseAccordion = () => {
                         <QuizIcon />
                     </ListItemIcon>
                     <ListItemText primary="Quiz" />
-                    <div className='course-free-video-lock'>
+                    <div className='course-free-video-lock' onClick={LockPopUpMessageWindow}>
                         <LockIcon/>
                     </div>
                 </ListItemButton>
             </ListItem>
             </AccordionDetails>
         </Accordion>
+        <CourseDetailsLockPopUpMessage trigger={lockPopUpMessage} setTrigger={setLockPopUpMessage} className='course-details-lock-pop-up-message-container'>
+                <div className="course-details-lock-pop-up-message">
+                Please enroll this course to get access of this video/material.
+                </div>
+                <div className='course-lock-pop-up-enroll-button' onClick={gotoCourseDetailsPage}>
+                    Enroll
+                </div>
+        </CourseDetailsLockPopUpMessage>
         </div>
     );
 

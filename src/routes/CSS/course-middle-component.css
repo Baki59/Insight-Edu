@@ -251,15 +251,17 @@
     display: flex;
     flex-direction: row;
 }
-.course-middle-component-pop-up div1{
-    gap: 10px;
-    display: flex;
-    flex-direction: row;
-}
-.course-middle-component-pop-up div2{
-    gap: 10px;
-    display: flex;
-    flex-direction: row;
+.course-middle-component-submit-button{
+    background-color: #58C233;
+    width: 20%;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 40%;
+    margin-top: 20px;
+    cursor: pointer;
 }
 .course-enroll-popup-input{
     display: flex;
@@ -403,6 +405,12 @@
 @media screen and (max-width: 960px){
     .course-box-right{
         width: 90%;
+    }
+    .course-enroll-popup-input{
+        width: 70%;
+    }
+    .course-middle-component-submit-button{
+        width: 60%;
     }
 }
 @media screen and (max-width: 760px){

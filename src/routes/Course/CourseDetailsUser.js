@@ -211,7 +211,7 @@ const CourseDetailsUser = () => {
                 <PersonIcon/>
               </div21>
               <div22>
-                <div221>Sakib Hasan 'Date' 'Time'</div221>
+                <div221>Sakib Hasan '05-07-2024' '12.30 P.M.'</div221>
                 <div222>Thanks for this beautiful course.</div222>
               </div22>
             </div2>
@@ -230,7 +230,7 @@ const CourseDetailsUser = () => {
                 <PersonIcon/>
               </div21>
               <div22>
-                <div221>Sakib Hasan 'Date' 'Time'</div221>
+                <div221>Sakib Hasan '05-07-2024' '12.30 P.M.'</div221>
                 <div222>Thanks for this beautiful course.</div222>
               </div22>
             </div2>
@@ -250,7 +250,7 @@ const CourseDetailsUser = () => {
               </div21>
               <div22>
                 <div221>
-                  <input placeholder='Comment'/>
+                  <textarea placeholder='Comment'/>
                 </div221>
               </div22>
             </div2>
@@ -276,7 +276,7 @@ const CourseDetailsUser = () => {
                   <PersonIcon/>
                 </div21>
                 <div22>
-                  <div221>Sakib Hasan 'Date' 'Time'</div221>
+                  <div221>Sakib Hasan '05-07-2024' '12.30 P.M.'</div221>
                   <div222>Thanks for this beautiful course.</div222>
                 </div22>
               </div2>
@@ -295,7 +295,7 @@ const CourseDetailsUser = () => {
                   <PersonIcon/>
                 </div21>
                 <div22>
-                  <div221>Sakib Hasan 'Date' 'Time'</div221>
+                  <div221>Sakib Hasan '05-07-2024' '12.30 P.M.'</div221>
                   <div222>Thanks for this beautiful course.</div222>
                 </div22>
               </div2>
@@ -315,7 +315,7 @@ const CourseDetailsUser = () => {
                 </div21>
                 <div22>
                   <div221>
-                    <input placeholder='Comment'/>
+                    <textarea placeholder='Comment'/>
                   </div221>
                 </div22>
               </div2>

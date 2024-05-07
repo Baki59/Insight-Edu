@@ -15,7 +15,7 @@ import Course from './routes/Course/Course';
 import FreeCourse from './routes/Freecourse';
 import Scholarship from './routes/Scholarship';
 import UserDashboard from './routes/UserDashboard/UserDashboard';
-import SignUp from './routes/SIgnup';
+import SignUp from './routes/Signup';
 import Login from './routes/Login';
 import Enroll from './routes/Enroll';
 import CourseDetails from './routes/Course/CourseDetails';
