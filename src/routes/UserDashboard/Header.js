@@ -19,8 +19,7 @@ function Header({OpenSidebar}) {
             <BsJustify className='userdashboard-icon' onClick={OpenSidebar}/>
         </div>
         <div className='userdashboard-home-icon' onClick={routeChange}>
-          <HomeIcon/>
-          Insight Home
+          <HomeIcon/>          
         </div>
         <div className='userdashboard-header-left'>
             <BsSearch className='userdashboard-icon'/>

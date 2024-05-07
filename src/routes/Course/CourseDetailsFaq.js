@@ -61,7 +61,7 @@ const Accordion = styled((props) => (
   
 
 const CourseDetailsFaq = () => {
-    const [expanded, setExpanded] = useState('panel1');
+    const [expanded, setExpanded] = useState('');
 
     const handleChange = (panel) => (event, newExpanded) => {
         setExpanded(newExpanded ? panel : false);
@@ -75,7 +75,7 @@ const CourseDetailsFaq = () => {
 
     return (
         <div>
-        <Accordion defaultExpanded className='course-module-accordion' expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+        <Accordion className='course-module-accordion' expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
             <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             

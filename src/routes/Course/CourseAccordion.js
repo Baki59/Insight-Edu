@@ -61,7 +61,7 @@ const Accordion = styled((props) => (
   
 
 const CourseAccordion = () => {
-    const [expanded, setExpanded] = useState('panel1');
+    const [expanded, setExpanded] = useState('');
     const [lockPopUpMessage, setLockPopUpMessage] = useState(false);
 
     const LockPopUpMessageWindow =()=>{
@@ -84,7 +84,7 @@ const CourseAccordion = () => {
 
     return (
         <div className='course-module-accordion-main'>
-        <Accordion defaultExpanded className='course-module-accordion' expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+        <Accordion className='course-module-accordion' expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
             <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             
