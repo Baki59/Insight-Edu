@@ -69,35 +69,37 @@ const CourseDetailsUserCopy = () => {
             {t("Join Free Class")}
         </firstRowElement4>
         </div> */}
-        <div className='course-deatils-user-accordion1'>
-          <div className='course-deatils-user-accordion1-left'>
+        <div className='course-course-deatils-accordion'>
+          <div className='course-course-deatils-accordion-left'>
             <CourseDetailsAccordion/>
           </div>
-          <div className='course-deatils-user-accordion1-right'>
-            <div className='course-deatils-user-accordion1-right-top'>
-              <div className='course-deatils-user-accordion1-right-top-text'>
+          <div className='course-course-deatils-accordion-right'>
+            <div className='course-course-deatils-accordion-right-top'>
+              <div className='course-course-deatils-accordion-right-top-text'>
                 HSC-24 Crash Course
               </div>
-              <div className='course-deatils-user-accordion1-right-progress'>
+              <div className='course-course-deatils-accordion-right-progress'>
                 <div1>Progress</div1>
                 <div2>
                   <progress value={0.5}/>
                 </div2>
                 <div3>
-                  <div31>50%</div31>
+                  <div31>80%</div31>
                 </div3>
               </div>
             </div>
-            <div className='course-details-user-video-controls'>
-              <div1>Prev<ArrowBackIosIcon/></div1>
-              <div4><ArrowForwardIosIcon/>Next</div4>
+            <div className='course-details-video-controls'>
+              <div1>Prev</div1>
+              <div2><ArrowBackIosIcon/></div2>
+              <div3><ArrowForwardIosIcon/></div3>
+              <div4>Next</div4>
             </div>
-            <video src={Lecture1} title='Lecture 1' controls autoplay="true"  className='course-details-user-lecture1-video' muted ref={videoPlayerRef}/> 
+            <video src={Lecture1} title='Lecture 1' controls autoplay="true"  className='lecture1-video' muted ref={videoPlayerRef}/> 
             <div className="course-details-user-container">
               <div className="course-details-user-second-row-element-1 text-xl"
               onClick={CourseContent}
               >
-                  {t("Lecture Description")}
+                  {t("Course Content")}
               </div>
               <div 
               className="course-details-user-second-row-element-2 text-xl"
@@ -119,7 +121,6 @@ const CourseDetailsUserCopy = () => {
                   {t("Comment")}
               </div>
             </div>
-            
             { showExams && <>
             <div className='course-details-user-exam'>Exam</div> 
             <div className='course-details-user-exam-box' style={well}>
@@ -328,14 +329,6 @@ const CourseDetailsUserCopy = () => {
                   marginRight:'30px'
               }}
               />
-              
-            </div>
-          }
-
-          {
-            showCourseContent &&
-            <div>
-              ThermoDynamics, Statistics, Mechanics etc.
               
             </div>
           }

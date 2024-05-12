@@ -221,13 +221,33 @@
 } */
 
 @media screen and (max-width: 1260px){
+    .box-left{
+        display: none;
+    }
     .box-right{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        //top: 10px;
+        //bottom: 10;
+        //right: 200px;
+        left: 50px;
+        background-color:#fcdfb2;
+        height: 550px;
+        width: 90%;
+        //padding: 200px;
+        //border-radius: 150px;
+        border-radius: 30px;
+        //align-self: flex-end;
+
+    }
+    /* .box-right{
         position: absolute;
         transform: translate(-50%, -50%);
         top: 60%;
         left: 50%;
         width: 90%;
-    }
+    } */
 }
 @media screen and (max-width: 770px){
     .box-right{

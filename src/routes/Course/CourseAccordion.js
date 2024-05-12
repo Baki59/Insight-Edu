@@ -22,6 +22,16 @@ import QuizIcon from '@mui/icons-material/Quiz';
 import { useNavigate } from 'react-router-dom';
 //import Typography from '@mui/material/Typography';
 import CourseDetailsLockPopUpMessage from './CourseDetailsLockPopUpMessage';
+import CourseShowAlert from './CourseShowAlert';
+import Alert from 'react-bootstrap/Alert';
+import Button from 'react-bootstrap/Button';
+// import { useAlert } from 'react-alert';
+// import SweetAlert from 'sweetalert-react';
+// import swal from '@sweetalert/with-react';
+import Swal from 'sweetalert2';
+
+
+
 
 const Accordion = styled((props) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -62,6 +72,7 @@ const Accordion = styled((props) => (
 
 const CourseAccordion = () => {
     const [expanded, setExpanded] = useState('');
+    const [show, setShow] = useState(false);
     const [lockPopUpMessage, setLockPopUpMessage] = useState(false);
 
     const LockPopUpMessageWindow =()=>{
@@ -81,9 +92,48 @@ const CourseAccordion = () => {
         let path = `./#`; 
         navigate(path);
     }
+    const showAlertCourse = () =>{ 
+            //<CourseShowAlert/>
+            Swal.fire({
+                title: "Locked!",
+                text: "Please Enroll this course to get access.",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes, Enroll"
+              }).then((result) => {
+                if (result.isConfirmed) {
+                    let path = `./`; 
+                    navigate(path);
+                }
+              });
+        
+    }
+    //const alert = useAlert()
 
     return (
         <div className='course-module-accordion-main'>
+        <Alert show={show} variant="success">
+            <Alert.Heading>My Alert</Alert.Heading>
+            <p>
+            Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
+            lacinia odio sem nec elit. Cras mattis consectetur purus sit amet
+            fermentum.
+            </p>
+            <hr />
+            <div className="d-flex justify-content-end">
+            <Button onClick={() => setShow(false)} variant="outline-success">
+                Close me
+            </Button>
+            </div>
+        </Alert>
+        {/* <SweetAlert
+            show={show}
+            title="Demo"
+            text="SweetAlert in React"
+            onConfirm={() => setShow({ show: false })}
+        /> */}
         <Accordion className='course-module-accordion' expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
             <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -112,7 +162,7 @@ const CourseAccordion = () => {
                         <PlayCircleFilledIcon />
                     </ListItemIcon>
                     <ListItemText primary="Class Lecture2" />
-                    <div className='course-free-video-lock'>
+                    <div className='course-free-video-lock' onClick={showAlertCourse}>
                         <LockIcon/>
                     </div>
                 </ListItemButton>

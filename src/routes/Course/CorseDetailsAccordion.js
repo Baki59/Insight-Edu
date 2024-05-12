@@ -165,7 +165,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video'>
                         Free Note
                     </div>
@@ -176,7 +176,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon/>
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video-lock'>
                         <LockIcon/>
                     </div>
@@ -187,7 +187,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video-lock'>
                         <LockIcon/>
                     </div>
@@ -288,7 +288,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video-lock'>
                     <LockIcon/>
                     </div>
@@ -299,7 +299,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon/>
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video-lock'>
                         <LockIcon/>
                     </div>
@@ -310,7 +310,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video-lock'>
                         <LockIcon/>
                     </div>
@@ -411,7 +411,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video-lock'>
                     <LockIcon/>
                     </div>
@@ -422,7 +422,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon/>
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video-lock'>
                         <LockIcon/>
                     </div>
@@ -433,7 +433,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video-lock'>
                         <LockIcon/>
                     </div>
@@ -534,7 +534,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video-lock'>
                     <LockIcon/>
                     </div>
@@ -545,7 +545,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon/>
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video-lock'>
                         <LockIcon/>
                     </div>
@@ -556,7 +556,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video-lock'>
                         <LockIcon/>
                     </div>
@@ -657,7 +657,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video-lock'>
                     <LockIcon/>
                     </div>
@@ -668,7 +668,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon/>
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video-lock'>
                         <LockIcon/>
                     </div>
@@ -679,7 +679,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video-lock'>
                         <LockIcon/>
                     </div>
@@ -780,7 +780,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video-lock'>
                     <LockIcon/>
                     </div>
@@ -791,7 +791,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon/>
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video-lock'>
                         <LockIcon/>
                     </div>
@@ -802,7 +802,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video-lock'>
                         <LockIcon/>
                     </div>
@@ -902,7 +902,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video-lock'>
                     <LockIcon/>
                     </div>
@@ -913,7 +913,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon/>
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video-lock'>
                         <LockIcon/>
                     </div>
@@ -924,7 +924,7 @@ const CourseDetailsAccordion = () => {
                     <ListItemIcon>
                         <EventNoteIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Class Note/Lecture Sheet" />
+                    <ListItemText primary="Class Note" />
                     <div className='course-details-free-video-lock'>
                         <LockIcon/>
                     </div>

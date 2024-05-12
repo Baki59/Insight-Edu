@@ -253,13 +253,13 @@
 }
 .course-middle-component-submit-button{
     background-color: #58C233;
-    width: 20%;
+    width: 30%;
     border-radius: 30px;
     color: white;
     padding: 10px;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: bold;
-    margin-left: 40%;
+    margin-left: 35%;
     margin-top: 20px;
     cursor: pointer;
 }
@@ -460,5 +460,12 @@
         top: 50%;
         left: 50%;
         width: 90%;
+    }
+    .course-enroll-popup-input{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .course-middle-component-submit-button{
+        margin-left: 40px;
     }
 }
