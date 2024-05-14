@@ -14,3 +14,10 @@
     text-decoration: underline;
     margin-bottom: 30px;
 }
+@media only screen and (max-width: 760px){
+    .enrolled-courses-main{
+        overflow-y: visible;
+        position: absolute;
+        top: 10%;
+    }
+}

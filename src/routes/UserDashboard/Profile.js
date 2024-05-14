@@ -11,8 +11,8 @@ const Profile = ({profile}) => {
   return (
     profile &&
     <div className='profile-main'>
-        <div className='flex flex-column justify-content-center align-items-center'>
-            {/* <img
+        {/* <div>
+            <img
             style={{
                 width:'200px',
                 height:'200px',
@@ -33,8 +33,8 @@ const Profile = ({profile}) => {
                     setImage(null);
                 }
             }}
-        /> */}
-        </div>
+        />
+        </div> */}
         <form className='profile-info'>
             <div className='profile-info-1'>
                 <label>First Name
