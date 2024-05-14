@@ -12,9 +12,12 @@ import { Typography } from '@mui/material';
 //import email_icon from '../img/email.png'
 //import password_icon from '../img/password.png'
 import HeroSubmitPopUpMessage from '../components/HeroSubmitPopUpMessage';
+import Swal from 'sweetalert2';
+
 
 function Contact() {
     const [popUpMessage, setPopUpMessage] = useState(false);
+    const [show, setShow] = useState(false);
 
     const PopUpMessageWindow =()=>{
         setPopUpMessage(!popUpMessage);
@@ -23,6 +26,19 @@ function Contact() {
     const routeChange = () =>{ 
         // let path = `./login`; 
         // navigate(path);
+    }
+    const showContactSuccessMessage = () =>{ 
+        //<CourseShowAlert/>
+        Swal.fire({
+            title: "Success",
+            text: "Your message sent successfully! Thank you for contacting us. Our team will contact you soon regarding your query.",
+            icon: "success",
+            showCancelButton: false,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Ok"
+          })
+    
     }
   return (
     <>
@@ -49,10 +65,10 @@ function Contact() {
                     <input type='email' placeholder='Email Id'/>
                 </div>
                 <div className='contact-input'>
-                    <textarea placeholder='Typer your message here'/>
+                    <textarea placeholder='Type your message here'/>
                 </div>
                 <div className='contact-submit-container'>
-                    <div className='contact-submit' onClick={PopUpMessageWindow}>Submit</div>
+                    <div className='contact-submit' onClick={showContactSuccessMessage}>Submit</div>
 
                 </div>
             </div>

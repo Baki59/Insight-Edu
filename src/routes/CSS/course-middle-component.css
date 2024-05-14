@@ -278,6 +278,10 @@
 .course-enroll-popup-input span{
     background-color: grey;
 }
+.course-middle-component-pop-up div1{
+    display: flex;
+    flex-direction: column;
+}
 
 /* @media screen and (max-width: 1460px){
     .course-box-left{

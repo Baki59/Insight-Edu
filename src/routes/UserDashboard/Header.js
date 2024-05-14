@@ -5,6 +5,7 @@ import
  import HomeIcon from '@mui/icons-material/Home';
  import Home from './Home';
 import { useNavigate } from 'react-router-dom';
+import Logo_icon from '../../assets/logo Icon.png';
 
 
 function Header({OpenSidebar}) {
@@ -19,7 +20,7 @@ function Header({OpenSidebar}) {
             <BsJustify className='userdashboard-icon' onClick={OpenSidebar}/>
         </div>
         <div className='userdashboard-home-icon' onClick={routeChange}>
-          <HomeIcon/>          
+          <img src={Logo_icon} alt="Logo_icon" />         
         </div>
         <div className='userdashboard-header-left'>
             <BsSearch className='userdashboard-icon'/>

@@ -14,7 +14,7 @@ const EnrolledCourseCard = () => {
         navigate(path);
     }
     const coursedetails = () =>{
-        let path1 = `./coursedetails`;
+        let path1 = `../course/coursedetails/coursedetailsuser`;
         navigate(path1);
     }
   return (

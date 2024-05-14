@@ -23,12 +23,11 @@
 
 .close-btn{
     position: absolute;
-    top: 16px;
+    top: 5px;
     right: 16px;
-    /* background-color: red; */
     color: black;
-    padding: 10px;
-    font-weight: bold;
-    //border-radius: 20px;
+    //padding: 10px;
+    //font-weight: bold;
+    font-size: 40px;
     cursor: pointer;
 }

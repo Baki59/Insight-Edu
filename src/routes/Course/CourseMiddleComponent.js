@@ -8,9 +8,13 @@ import {useState} from "react";
 import CourseEnrollPopUp from "./CourseEnrollPopUp";
 function CourseMiddleComponent(){
     const [popUpWindow, setPopUpWindow] = useState(false);
+    const [popUpPromoWindow, setPopUpPromoWindow] = useState(false);
 
     const PromoapplyWindow =()=>{
         setPopUpWindow(!popUpWindow);
+    }
+    const PromoapplyWindow1 =()=>{
+        setPopUpPromoWindow(!popUpPromoWindow);
     }
 
     return(
@@ -96,7 +100,29 @@ function CourseMiddleComponent(){
                     <div>Previous Amount: 5000</div>
                     <div>Payable Amount: 4000</div>
                 </div> */}
-                <div className="course-middle-component-submit-button">SignUp & Pay Now</div>
+                <div className="course-middle-component-submit-button" onClick={PromoapplyWindow1}>SignUp & Pay Now</div>
+            </CourseEnrollPopUp>
+            <CourseEnrollPopUp trigger={popUpPromoWindow} setTrigger={setPopUpPromoWindow} className='course-middle-component-pop-up'>
+                {/* <div>Have any Poromo Code?</div> */}
+                <div>Course Fee: 3000 BDT</div>
+                <div>Discount: 10%</div>
+                <div>Payable Amount: 2700 BDT</div>
+                <div>Have Any Promocode?</div>
+                <div1>
+                    <input className="course-enroll-popup-input"
+                    placeholder="Promocode"
+                    ></input>
+                    <button>Apply</button>
+                </div1>
+                <div>Net Payable Amount: </div>
+                {/* <button>
+                    Submit
+                </button> */}
+                {/* <div>
+                    <div>Previous Amount: 5000</div>
+                    <div>Payable Amount: 4000</div>
+                </div> */}
+                <div className="course-middle-component-submit-button" onClick={PromoapplyWindow1}>Pay Now</div>
             </CourseEnrollPopUp>
             
         </div>

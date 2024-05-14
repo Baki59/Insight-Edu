@@ -77,7 +77,8 @@
     padding: 10px;
   }
   .userdashboard-home-icon{
-    font-size: 20px;
+    //font-size: 20px;
+    width: 30px;
     font-weight: bold;
     cursor: pointer;
   }
@@ -249,6 +250,9 @@
     .sidebar-title > span {
       display: inline;
     }
+    .charts {
+      height: 800px;
+    }
   }
   /* Small <= 768px */
   .header-search{
@@ -257,6 +261,9 @@
   }
     
   @media screen and (max-width: 768px) {
+    .userdashboard-home-icon{
+      margin-left: 0px;
+    }
     .main-cards {
       grid-template-columns: 1fr;
       gap: 10px;
@@ -272,6 +279,9 @@
   /* Extra Small <= 576px */
   
   @media screen and (max-width: 576px) {
+    .userdashboard-header {
+      gap: 10px;
+    }
     .userdashboard-hedaer-left {
       display: none;
     }
