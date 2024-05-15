@@ -11,6 +11,8 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import TaskAltIcon from '@mui/icons-material/TaskAlt';
 import PersonIcon from '@mui/icons-material/Person';
+import FilterListIcon from '@mui/icons-material/FilterList';
+import CourseDetailsUserSidebar from './CourseDetailsUserSidebar'
 
 const CourseDetailsUserCopy = () => {
   const { t } = useTranslation();
@@ -19,6 +21,11 @@ const CourseDetailsUserCopy = () => {
   const [showDiscussion, setDiscussion] = useState(false);
   const [showComment, setComment] = useState(false);
   const [showExams, setShowExams] = useState(false);
+  const [openFilterbarToggle, setOpenFilterbarToggle] = useState(false);
+
+  const OpenSideFilterbar = () => {
+      setOpenFilterbarToggle(!openFilterbarToggle)
+  }
   // const handlePlay = () =>{
   //   videoPlayerRef.current.play();
   // }
@@ -50,6 +57,7 @@ const CourseDetailsUserCopy = () => {
     setShowExams(false);
   }
   return (
+    
     <div>
         <Navbar/>
 
@@ -69,6 +77,12 @@ const CourseDetailsUserCopy = () => {
             {t("Join Free Class")}
         </firstRowElement4>
         </div> */}
+        <div className='course-card-accordion-from-sidebar'>
+            <FilterListIcon onClick={OpenSideFilterbar}/>
+        </div>
+        {
+            openFilterbarToggle ? (<CourseDetailsUserSidebar openFilterbarToggle={openFilterbarToggle} OpenSideFilterbar={OpenSideFilterbar}/>) : ("")
+        }
         <div className='course-deatils-user-accordion1'>
           <div className='course-deatils-user-accordion1-left'>
             <CourseDetailsAccordion/>

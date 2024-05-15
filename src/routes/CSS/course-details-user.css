@@ -139,7 +139,7 @@
     align-self: flex-start;
     cursor: pointer;
     font-size: 25px;
-    margin-left: 10%;
+    //margin-left: 10%;
 }
 /* .course-details-user-video-controls div2{
     cursor: pointer;
@@ -422,8 +422,11 @@
     font-size: 20px;
 }
 .course-details-user-lecture1-video{
-    margin-left: 10%;
+    //margin-left: 10%;
     width: 70%;
+}
+.course-card-accordion-from-sidebar{
+    display: none;
 }
 
 
@@ -744,5 +747,13 @@
         width: 200px;
         
     }
+    .course-card-accordion-from-sidebar{
+        display: flex;
+        position: relative;
+        top: 90px;
+        left: 10%;
+        //align-items: flex-start;
+    }
+    
     
 }
