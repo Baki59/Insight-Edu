@@ -221,7 +221,7 @@
     }
     .hero-login{
         position: absolute;
-        top: 10%;
+        top: 5%;
         left: 25%;
         background-color:#4c527d;
         width: 50%;
@@ -286,11 +286,9 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        
     }
-
     .hero-login{
-        height: 80%;
+        height: 93%;
         position: absolute;
         left: 15%;
         width: 70%;

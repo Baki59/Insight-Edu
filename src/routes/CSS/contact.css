@@ -116,9 +116,16 @@
     .contact-main-container{
         width: 100%;
     }
+    .contact-main-container{
+        margin-left: 0%;
+    }
+    .contact-input{
+        width: 70%;
+    }
+    
     .contact-input input{
         height: 30px;
-        width: 90%;
+        width: 400px;
         padding: 20px;
         font-size: 19px;
     }

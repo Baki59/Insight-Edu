@@ -224,7 +224,7 @@
     .box-left{
         display: none;
     }
-    .box-right{
+    /* .box-right{
         display: flex;
         flex-direction: column;
         position: relative;
@@ -240,6 +240,33 @@
         border-radius: 30px;
         //align-self: flex-end;
 
+    } */
+    .box-right{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        //top: 10px;
+        //bottom: 10;
+        //right: 200px;
+        left: 180px;
+        background-color:#fcdfb2;
+        height: 550px;
+        width: 500px;
+        //padding: 200px;
+        //border-radius: 150px;
+        border-radius: 30px;
+        //align-self: flex-end;
+
+    }
+    .box-right-content{
+        width: 300px;
+        //padding: 100px;
+        height: 70px;
+        align-self: center;
+        align-items: center;
+    }
+    .box-right-header{
+        font-size: 30px;
     }
     /* .box-right{
         position: absolute;

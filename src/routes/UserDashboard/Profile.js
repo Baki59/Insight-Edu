@@ -1,40 +1,48 @@
-import React,{useState} from 'react'
+import React,{useState,useRef} from 'react'
 import Profile1 from '../../assets/profile1.webp'
 import { InputText } from 'primereact/inputtext';
 import { Input } from '@mui/icons-material';
 import './profile.css';
-
+import Photo_Upload_Image from '../../assets/photo_upload_image.jpg';
         
 
 const Profile = ({profile}) => {
     const [image,setImage]=useState("");
+    //const [file, setFile] = useState();
+    const inputRef = useRef(null);
+    // function handleImageChange(e) {
+    //     console.log(e.target.files);
+    //     setFile(URL.createObjectURL(e.target.files[0]));
+    // }
+    const handleImageClick = () =>{
+        inputRef.current.click();
+    }
+    const handleImageChange = (event) =>{
+        const file = event.target.files[0];
+        console.log(file);
+        setImage(event.target.files[0]);
+    }
   return (
     profile &&
-    <div className='profile-main'>
-        {/* <div>
-            <img
-            style={{
-                width:'200px',
-                height:'200px',
-                borderRadius:'50%',
-                objectFit:'cover',
-                border:'4px solid green'
-            }}
-            src='Profile1' alt=''/>
-        <InputText type='file'
-            accept='/image/*'
-            onChange={(event)=>{
-                const file=event.target.files[0];
-                if(file && file.type.substring(0,5) === "image"){
-                    setImage(file);
-
-                }
-                else{
-                    setImage(null);
-                }
-            }}
+    <div className='profile-holder'>
+    <div onClick={handleImageClick} className='profile-user-photo'>
+        {
+            image ? (
+                <img src={URL.createObjectURL(image)} alt=""
+                className='profile-image-display-after'/>
+            ):(
+                <img src={Photo_Upload_Image} alt="" className='profile-image-display-before'/>
+            )
+        }
+        <input 
+        type='file' 
+        ref={inputRef} 
+        onChange={handleImageChange} 
+        style={{display:'none'}}
         />
-        </div> */}
+        <div className='profile-name'>Emanuel Makao</div>
+    </div>
+    <div className='profile-main'>
         <form className='profile-info'>
             <div className='profile-info-1'>
                 <label>First Name
@@ -115,6 +123,7 @@ const Profile = ({profile}) => {
         
         
         
+    </div>
     </div>
   )
 }
